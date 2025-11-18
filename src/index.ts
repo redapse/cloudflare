@@ -68,6 +68,8 @@ export default {
     html_content += `<p>The O3 level is: ${content.data.iaqi.o3?.v}.</p>`;
     html_content += `<p>The temperature is: ${temperature}°${prefs.unit === "celsius" ? "C" : "F"}.</p>`;
     html_content += `<p><a href="?unit=celsius">Show °C</a> | <a href="?unit=fahrenheit">Show °F</a></p>`;
+    html_content += `<p><strong>Your unique ID:</strong> ${userId}</p>`;
+
 
     const html = `<!DOCTYPE html>
       <head>
